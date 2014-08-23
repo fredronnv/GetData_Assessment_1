@@ -47,8 +47,8 @@ merged <- rbind(test_data,train_data)
 # Apply activity labels
 merged$Activity <- factor(merged$Activity, labels=activity_labels$V2)
 
-# Write out the dataset
-write.table( merged, file = "tidy_first_full.txt", row.names = FALSE )
+# Write out the full dataset (not for this assignment)
+#write.table( merged, file = "tidy_first_full.txt", row.names = FALSE )
 
 # Generate another dataset
 # with the average of each variable for each activity and each subject
